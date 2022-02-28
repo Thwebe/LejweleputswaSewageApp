@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/androidagain"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="Loading...please wait..."
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/nothing_you_could_do"
+            android:gravity="center"
+            android:text="LEGWELEPUTSWA LOCATION BASED APP"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="1dp"
+            android:text="Register to login "
+
+
+            android:textColor="#fff"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/resgister_pic" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
+                android:layout_width="297dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/inputbuttons"
+                android:hint="name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="297dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/inputbuttons"
+                android:hint="email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="297dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/inputbuttons"
+                android:hint="password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etReytpe"
+                android:layout_width="297dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/inputbuttons"
+                android:hint="Re-type password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCellNumber"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/inputbuttons"
+                android:hint="cell number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/buttons"
+            android:gravity="clip_horizontal"
+            android:text="Register" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+

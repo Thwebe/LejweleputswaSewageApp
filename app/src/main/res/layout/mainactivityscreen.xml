@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/androidagain"
+    android:orientation="vertical"
+    tools:context=".MainScreen">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="Loading...please wait..."
+        android:textColor="@color/cardview_shadow_start_color"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Welcome"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="We're so glad you are here! You are now part of a growing comunity of members, colloborating on combating the issues of damaged sewage pipes. please take a picture and press the location button so that the admin can locate the place and send the workers asap."
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_marginTop="3dp"
+            android:clickable="false"
+            android:longClickable="false"
+            app:srcCompat="@drawable/camera" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnPicture"
+                    android:layout_width="244dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons"
+                    android:text="Take Picture" />
+
+                <EditText
+                    android:id="@+id/ETcoment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="comment"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <Button
+                    android:id="@+id/btnLocation"
+                    android:layout_width="247dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons"
+                    android:gravity="center"
+
+                    android:text="Send my location" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_Navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner"
+            app:itemIconTint="@color/iconcolor"
+            app:itemRippleColor="@color/white"
+            app:menu="@menu/navigation">
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

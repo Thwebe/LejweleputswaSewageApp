@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lejwelepustwa</string>
+    <string name="link">Please wait sending you a link to reset password...</string>
+    <string name="MAP_KEY" translatable="false"> AIzaSyDlAeiqG32uTUoZZi9dBe6rREKF9w1B6Iw</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

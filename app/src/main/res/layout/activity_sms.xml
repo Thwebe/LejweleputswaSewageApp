@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/regularbackground"
+    tools:context=".SmsActivity">
+
+    <EditText
+        android:id="@+id/etTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_weight="0"
+        android:ems="10"
+        android:hint="Number"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_weight="0"
+        android:ems="10"
+        android:hint="Message"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:text="Send"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+</LinearLayout>
